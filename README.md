@@ -3,7 +3,12 @@
 This repository contains the custom Python scripts used for the statistical analysis in our manuscript.
 
 ## Scripts Included
-- `geometric_fdr_p_value.py`: Performs pairwise geometric comparisons (DSC, HD95, ASD) across multi-center cohorts.
+
+### 1. Metric Extraction
+- **`geometric_metric_calculation.py`**: Extracts geometric indices (**DSC, HD95, and ASD**) from raw NIfTI (.nii.gz) files. It implements symmetric surface distance calculations and is fully voxel-spacing aware using SimpleITK.
+
+### 2. Inferential Statistics
+- **`geometric_fdr_p_value.py`**: Performs pairwise geometric comparisons across multi-center cohorts using pooled analysis and FDR correction.
 - **`dosimetric_stats.py`**: Performs independent dosimetric evaluation (Mean/Max dose, Volume metrics) for each clinical scenario.
 - **`efficiency_stats.py`**: Evaluates active contouring duration using a hybrid approach (independent case-level and pooled organ-level assessments).
 

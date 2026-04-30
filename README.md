@@ -12,6 +12,14 @@ This repository contains the custom Python scripts used for the statistical anal
 - **`dosimetric_stats.py`**: Performs independent dosimetric evaluation (Mean/Max dose, Volume metrics) for each clinical scenario.
 - **`efficiency_stats.py`**: Evaluates active contouring duration using a hybrid approach (independent case-level and pooled organ-level assessments).
 
+## Nomenclature Mapping (Data Dictionary)
+Please note that the internal folder names and variables in the scripts correspond to the finalized clinical phases in the manuscript as follows:
+- **`RW` (or 'Real-World')** in code $\rightarrow$ **`Real-World Manual`** in manuscript.
+- **`TR` (or 'Manual Post-Education')** in code $\rightarrow$ **`Post-Education Manual`** in manuscript.
+- **`AI` (or 'Education+AI-Assisted')** in code $\rightarrow$ **`Post-Education AI-Assisted`** in manuscript.
+
+*This separation between internal data-handling variables and final publication terminology was strictly maintained to ensure original data integrity and prevent file-path corruption.*
+
 ## Statistical Methodology
 
 The pipeline ensures high reproducibility by executing:
